@@ -1,32 +1,77 @@
-# Next stage: independent source validation and accounting evidence intake
+# Evidence intake and next-analysis decision protocol
 
-The public-source corrections and a bounded documentary follow-up are implemented. The next stage has a [human-review guide](source-review-guide.md), local page viewer, concise [unsent request](department-request.md), [minimum-record register](accounting-evidence-requests.csv) and explicit intake rules. Explanation remains gated on documentary evidence.
+The question is whether the 2024 and 2025 reported accounts are comparable and how much change can be reconciled from records. This protocol governs the next analysis; it does not declare any evidence gate passed. The public-source audit, [evidence table](public-source-evidence.csv) and [bounded search](public-source-search-log.csv) leave actual billing coverage, calculation rules, annual scope and the complete written plan unresolved. The current bridge remains **42,005,609 inferred gallons of unexplained change under calendar-day annualization**, with no causal attribution or leakage estimate.
 
-## Public evidence and the remaining initial requests
+## Intake and minimum response
 
-The [evidence table](public-source-evidence.csv) records a shortened-cycle announcement, the July 2024 late-fee resolution, illustrative bill fields, unsigned service-agreement drafts and historical Master Plan water-loss discussion. None confirms an annual denominator, actual coverage, scope alignment or a gallon adjustment. The written plan and relevant later updates were not obtained in the [bounded search](public-source-search-log.csv).
+The [unsent correspondence](department-request.md), [technical attachment](questions-for-water-department.md) and [request register](accounting-evidence-requests.csv) make R01-R03 the first accounting bottleneck, R04 the existing-work check and R05 a focused historical clarification. Monthly/native-cycle records (R06) and use/measurement records (R07) are conditional follow-ups. No request has been sent or accounting response received.
 
-| Request | Minimum useful initial record | Gate it resolves |
+1. Complete the person's [source-review record](source-review-guide.md) before releasing quantitative exhibits. Keep all seven checklist rows pending until that review occurs; AI review is a separate record.
+2. After authorized contact, preserve each received original unchanged in ignored local storage. Record request ID, sender/source, received timestamp, SHA256/byte count, version, publication restrictions, exact page/table/cell, applicable dates, units and account/meter scope. Label reported, derived, assumed and reviewer-confirmed fields separately. Private correspondence and row-level records are not public by default.
+3. Record a response to every requested definition as supported, contradicted or unresolved, with the exact evidence reference and the reviewer/date. An unavailable worksheet, absent adjustment log or silence is missing evidence, not a zero or confirmation. A partial response resolves only its supported claims.
+4. Reproduce both annual worksheets before explaining their difference. Preserve the seven printed observations. Put corrected inputs or direct ledger observations in a separately identified revision; record every change from the public-report baseline. Check the existing plan for an earlier explanation and its actual data period rather than assuming it covers 2024/2025.
+
+## Comparability acceptance
+
+All conditions below require substantive review of exact records. A reference string, PWS match, executed agreement, compatible percentage or passing test alone is insufficient.
+
+| Gate | Required evidence and acceptance test | If absent or inconsistent |
 |---|---|---|
-| R01 | 2024/2025 calculation worksheets and actual precision/formula definitions | Reproduce the reported quantities under documented rules |
-| R02 | Actual transition coverage and report-year assignment; distinguish volume corrections from late fees | Determine whether billing-period effects enter the annual account |
-| R03 | Executed/current scope reference plus year-specific account and production-meter inclusion | Align production and billing boundaries |
-| R04 | Written Master Plan version, accounting sections and relevant later updates | Establish existing analysis and intended departmental use |
-| R05 | Focused 2020/2022 formula clarification and 2021 precision convention | Resolve or retain the historical audit qualifications |
+| C1 - identity and units | Dated/source-identified worksheets belong to the intended NY3503526 accounting system; production, billed and percentage units and all conversions are explicit. | Retain unresolved identity/unit status; do not combine totals. |
+| C2 - production period | Actual production start/end, meter/source aggregation and corrections reproduce the annual production figure, or document a revision. | Keep report testing coverage separate; do not infer production dates from a cover year. |
+| C3 - billed volume and denominator | Actual billed usage coverage, reading/issuance dates, year assignment, source total or averaging formula, and the actual denominator are documented for each year. Reproduce the billed figure and its precision from those inputs. | Keep calendar-day annualization as a scenario. Do not substitute a notice, sample bill, reading date alone or assumed 60-day cycle. |
+| C4 - common scope | Year-specific included account/customer/wholesale groups and production-meter chain align. Transfers, exports/imports or scope changes are either absent by documented check or bridged with volumes on a declared common boundary. | No comparability claim based only on municipal names or an unsigned/current agreement. |
+| C5 - arithmetic and adjustment closure | Formulas, rounding, estimates/corrections and any year-boundary allocations reproduce printed figures within **documented** precision, or trace an explicit correction. The adjustment register sums to independently checked revised totals with no duplicate volumes. | Report the exact discrepancy and uncertainty; the 0.05 pp heuristic is not an acceptance tolerance. |
+| C6 - review and cross-year consistency | A documented person validates source transcription; the analyst and methods reviewer check C1-C5, the same accounting definition across years, and production/billing period alignment within each year. Calendar years have 366 days in 2024 and 365 in 2025. | State which documentary/human gate remains open; no blanket confirmed label. |
 
-R06/R07 (monthly/native-cycle totals and authorized-use/measurement evidence) remain conditional follow-ups. No request has been sent, no departmental accounting record has been received, and no confirmation status changes on the strength of these public additions.
+Classify the result as **source accounts comparable**, **comparable only after documented reconstruction**, or **unresolved**. Reconstruction must name the common period/scope, every transformation and remaining uncertainty; it does not retroactively make the printed inputs comparable. A worksheet method change can be documented even when the old daily-average interpretation cannot be reproduced.
 
-## Intake sequence
+Use a direct observed annual billed total when provided and supported. If only a daily statistic exists, multiply only under its documented construction and denominator, retaining its rounding interval. Do not invent a ledger total. The current `reconcile()` function's `comparability_established` flag checks only a particular daily-average method's period/denominator, scope-status and reference-presence conditions. It can be true while a percentage is incompatible or billed volume exceeds production; it does not certify C5 arithmetic, C6 human review or documentary truth. It is not a general ledger importer. A valid alternative formula or direct ledger response needs a separately reviewed calculation path. Do not force it into this function or change a status merely to obtain `comparability_established=True`.
 
-1. A person checks the seven original accounting pages against [source-review-checklist.csv](source-review-checklist.csv), following the [review guide](source-review-guide.md). Keep reviewer/date, review type, relationship to the project, inspected hash/page and corrections. Store any identifying review memo locally; publish only an approved reviewer identifier and review status. Do not set `human_verified` based on another AI review.
-2. After authorized contact, save each received worksheet/procedure unchanged with timestamp, source, SHA256 and permission/publication limits. Never publish customer records or private correspondence automatically.
-3. First reconcile 2024/2025 definitions: production period, billed usage coverage, actual denominator, annual assignment, corrections, rounding and system/customer/measurement scope. Every confirmation status needs a precise document/page/cell reference. The function's reference-presence check does not establish documentary truth.
-4. Recalculate under the documented rules. Keep printed observations unchanged; put corrected/department-confirmed observations in a separately identified revision with a change log. Show which rounding scenario is supported and whether the small 2021 difference is explained. Clarify the historical 2020/2022 questions without broadening the initial request unnecessarily.
-5. If a residual remains, request monthly production and native billed cycles with start/end dates, estimates/corrections and adjacent cycles overlapping the study boundary. Preserve usage, reading and issuance dates separately; missing authorized-use quantities remain unavailable, never zero.
-6. Build a documented bridge: each adjustment has a signed amount, period, scope, calculation and exact source reference; the unexplained change remains conditional until alignment is established. Check for double counting between adjustments and uses.
+## Tests of the proposed explanations
 
-For each response, record the request ID, immutable local file path/SHA256, received timestamp, source and publication permission, document version, exact page/table/cell, applicable dates/unit/scope, reported-versus-derived status, reviewer and unresolved questions. A partial response resolves only the specific claim supported. An executed agreement alone does not validate the annual included-account set; a sample bill or announced period does not validate the daily-average denominator.
+These are record tests, not a causal model or ranked explanations. They apply the [hypothesis register](hypothesis-evidence.csv); evidence of a schedule or asset event without an attributable volume establishes context only.
 
-## Advance or stop
+| Hypothesis | Record-supported signature | Evidence that weakens it / remaining qualification |
+|---|---|---|
+| H1 - billing coverage/cutoff | Actual transition/adjacent cycles and year-assignment rules yield a reproducible transfer into or out of 2024/2025. | Identical coverage and assignment after adjustment, with no material transfer in complete records; announced timing alone cannot quantify it. |
+| H2 - denominator/formula | Worksheets show a changed denominator or formula and its recalculation accounts for a specific difference. | Same supported method/precision and aligned inputs in both years. Formula reconciliation is accounting evidence, not a physical water-use change. |
+| H3 - corrections/estimates/omissions | Existing adjustment totals and estimate-to-actual history change the billed/production totals by supported amounts. | Complete relevant records show no material corrections. A missing log cannot weaken it; late-fee waivers are dollars, not gallons. |
+| H4 - boundary/inclusion | Actual scope/inclusion and meter records identify changes and volumes needed to reconstruct the same boundary. | Documented stable inclusion and meter chain. An executed agreement without the included groups/meters is insufficient. |
+| H5 - authorized unbilled use | Existing logs or defensible documented estimates support year-specific uses on the aligned period/scope. | Complete comparable logs show stable or insufficient use; unavailable uses stay unknown. |
+| H6 - measurement | Calibration/replacement evidence and the affected meter totals support a signed correction with uncertainty. | Stable checked measurement or an effect too small to account for the change; a replacement date alone is insufficient. |
+| H7 - physical losses | A remaining aligned balance plus independent loss/repair/measurement evidence supports a particular physical-loss claim after recorded uses and accounting differences are considered. | An accounting reconciliation explains the apparent change; otherwise an unresolved remainder alone still does not identify leakage. |
 
-Advance to explanation only when period assignment, actual denominators and measurement scope can be reconciled from records. If worksheets suffice, document the explanation and departmental usefulness of a repeatable procedure. If records remain unavailable, complete the public-report audit with the unresolved conditional residual. A source-review packet is not a completed human review, and a request draft is not sent correspondence.
+## Adjustment bookkeeping and bridge
+
+Keep one local adjustment register with: unique event ID, request/hypothesis reference, evidence hash and page/cell, affected year, usage/reading/issuance period, scope, P or B side, signed gallons, conversion/calculation, precision/uncertainty, parent/transfer ID, reviewer and status. Only supported, reviewed amounts enter the numeric bridge. Proposed or unquantified entries stay unknown and cannot be summed as zero.
+
+Let `P0_y` be printed production and `B0_y` the current conditional daily-rate × calendar-days baseline. For each supported basis/scope/correction event record additions to production as `cP_y` and additions to billed volume as `cB_y`; negative values remove volume. Then:
+
+```text
+P*_y = P0_y + sum(cP_y)
+B*_y = B0_y + sum(cB_y)
+R*_y = P*_y - B*_y
+D* = R*_2025 - R*_2024
+   = 42,005,609 + sum(cP_2025 - cP_2024) - sum(cB_2025 - cB_2024)
+E_i = (cB_i,2025 - cB_i,2024) - (cP_i,2025 - cP_i,2024)
+D* = 42,005,609 - sum(E_i)
+```
+
+`E_i` is a signed accounting contribution to the starting conditional difference; a negative contribution increases it. The 42,005,609 starting value remains conditional. No actual `cP`, `cB` or `E` amount has been established. Supported zero adjustments require a complete scope-specific check; missing adjustments remain unknown even when the arithmetic display carries only supported entries. An added billed volume lowers that year's residual; added production raises it. A reallocation across years has linked opposite entries and conserves event volume, although its effect on the year-to-year difference can be twice the transferred volume.
+
+Use either an aggregate basis-replacement entry (for example, observed annual B minus conditional B0) **or** disjoint detailed entries that sum to it. Mark the alternative parent/details as reconciliation-only and do not book both. A transition correction already included in a corrected worksheet cannot be booked again. Group the same atomic volume under one event even if H1/H2/H3 all describe it. Reconcile transfers on both sides/years, keep wholesale transfers internal or external consistently, and check conservation, units, signs and totals against the source. Do not net unrelated or unknown corrections to make the remainder vanish. Carry documented precision and correlated uncertainty; do not assume independent errors to narrow an interval.
+
+Authorized unbilled use is a **composition of the aligned residual**, not a billed-volume correction. If supported, show `R*_y = U_y + remaining_y` separately, with `U` on the same period/scope and counted once. Do not book it as `cB` or subtract it twice. `remaining_y` still includes possible measurement/apparent errors and physical losses; it is not a leakage estimate. The rate/calendar decomposition in the public bridge is arithmetic and must not also be booked as an explanatory adjustment.
+
+## Advance, limit or close
+
+For intake triage, a material gap is one that exceeds documented input precision or could change the comparability classification or stated reporting decision. Record the chosen criterion and its evidence before attributing adjustments. No arbitrary gallon threshold or the existing 0.05 pp diagnostic heuristic establishes materiality.
+
+| Records available | Defensible next output | Stop/limit |
+|---|---|---|
+| C1-C6 supported; worksheets suffice | Reproduced or corrected accounts, a signed accounting bridge, uncertainty and the department's stated reporting use if supplied. | No physical-loss attribution without separate H7 evidence. No monthly export needed when existing records answer the question. |
+| Definitions or partial totals only | Revise only supported assumptions; report bounded calculations if the bounds themselves have evidence. Identify exactly which period/scope or adjustment remains missing. | No extrapolated annual ledger, assumed zero use or causal interpretation. Seek only the R06/R07 item needed for that gap, after authorization. |
+| Complete useful response unavailable, declined, or still insufficient after a focused clarification | Close this stage as a public-report comparability audit, with dated search/intake coverage, open C gates, conditional bridge and retained historical qualifications. | Do not manufacture reconciliation or keep expanding searches/engineering. Reopen only when a specific new record or authorized response could change a gate. |
+
+Do not initiate contact to satisfy the stopping rule. Until a user-authorized request is sent, describe the current endpoint as **bounded public-source work complete; external evidence pending**. Missing coverage, denominator, scope, adjustments or authorized-use/measurement evidence prevents causal interpretation. Even a complete accounting explanation is not a causal estimate of leakage, policy effectiveness or infrastructure performance. Seven annual observations support descriptive accounting only; external operational recommendations remain gated on validated evidence and a documented departmental decision need.
