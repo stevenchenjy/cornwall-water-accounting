@@ -1,0 +1,8 @@
+reporting_year,period_start,period_end,pws_id,produced_gal,reported_daily_produced_gal,reported_daily_billed_gal,reported_unaccounted_pct,source_id,physical_pdf_page,verification_status,notes
+2019,,,,,,,,awqr-2019,,pending_extraction,
+2020,,,,,,,,awqr-2020,,pending_extraction,
+2021,,,,,,,,awqr-2021,,pending_extraction,
+2022,,,,,,,,awqr-2022,,pending_extraction,
+2023,,,,,,,,awqr-2023,,pending_extraction,
+2024,2024-01-01,2024-12-31,NY3503526,283389000,774287,625159,19.26,awqr-2024,2,source_text_checked,Checked against official source text during setup; independent human review pending
+2025,2025-01-01,2025-12-31,NY3503526,290485000,795849,531229,33.25,awqr-2025,2,source_text_checked,Checked against official source text during setup; independent human review pending

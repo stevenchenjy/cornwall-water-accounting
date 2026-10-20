@@ -1,0 +1,5 @@
+claim_id,claim,source_id,locator,status,limitation
+W-C01,2024 reported production 283389000 gal; daily billed 625159; unaccounted 19.26 percent,awqr-2024,physical PDF page 2,source_text_checked,Not human independently verified; billed annual volume not supplied
+W-C02,2025 reported production 290485000 gal; daily billed 531229; unaccounted 33.25 percent,awqr-2025,physical PDF page 2,source_text_checked,Not a leakage estimate
+W-C03,Billing issuance date changes effective July 15 2024,billing-change-2024,Billing Changes section,source_text_checked,Mechanism and effect on reported totals unverified
+W-C04,No prior local study performs exactly this analysis,,,not_established,Must not claim novelty without literature and departmental scope review

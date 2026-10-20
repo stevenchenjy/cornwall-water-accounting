@@ -1,0 +1,2 @@
+event_id,effective_date,event,source_id,locator,evidence_status,possible_mechanism,causal_status
+W-E01,2024-07-15,Utility bill issuance changes to 15th of odd-numbered months; notice also describes account and bill changes,billing-change-2024,Billing Changes section,source_text_checked,Check period allocation and accounting transitions,hypothesis_only
