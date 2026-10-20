@@ -1,6 +1,6 @@
 # Annual water accounts: revised public-source audit
 
-Generated 2026-10-20T15:06:15.466817+00:00.
+Generated 2026-10-20T16:50:34.992757+00:00.
 
 **Result:** all seven accounting pages were checked against extracted text and rendered original PDFs by AI. No independent human verification or departmental confirmation is claimed. Production and billing comparability remains unestablished in every year.
 
@@ -53,4 +53,6 @@ For 2020, using 365 rather than 366 billed days yields 36.1748%, still incompati
 
 Confirmation statuses require traceable departmental documents. The code also requires billing-coverage, denominator and boundary reference fields before returning comparability established; references still require substantive human validation. No such confirmations have been supplied. The 2023 daily billed interpretation remains contextual and is not a verified comparable trend observation.
 
-Next-stage handoff: [independent source-review checklist](../research/source-review-checklist.csv), [departmental request draft](../research/department-request.md), and [data-intake plan](../research/data-intake-plan.md).
+The [public-source follow-up](../research/public-source-audit.md) records the shortened transition-period announcement, a billing-schedule/late-fee resolution and existing Master Plan discussion. It supplies no actual reading dates, annual-volume adjustment or confirmed boundary; the calculations above remain conditional.
+
+Next-stage handoff: [independent source-review guide](../research/source-review-guide.md), [checklist](../research/source-review-checklist.csv), [departmental request draft](../research/department-request.md), and [data-intake plan](../research/data-intake-plan.md).

@@ -19,3 +19,9 @@ Next review should independently inspect original pages, resolve the contextual 
 ## Second-review correction - October 20, 2026
 
 The external ChatGPT review reproduced a +0.6301 gallon/day 2021 warning overlooked by the first narrative. This session reproduced it and replaced the static claim with data-driven reporting, tested annual-total precision scenarios (1/100/1000 gallons), retained the unresolved 2020/2022 results, added the 2020 365-day sensitivity, and decomposed inferred billing change. Confirmation references are required in addition to status fields. This remains AI methods review; the human checklist is pending.
+
+## Public-source follow-up - October 20, 2026
+
+The later [evidence table](../research/public-source-evidence.csv) corrects an incomplete description of the billing notice: it announces a shortened transition consumption period as well as issuance changes. July 2024 minute pages 7-8 provide a recorded schedule-overlap/late-fee resolution. The official 2023 presentation also includes historical water-loss discussion. These additions strengthen the documentary questions without supplying actual read dates, annual volume adjustments or confirmed boundaries. Example bills remain illustrative; public IMA versions remain unsigned. See the [follow-up and capture limits](../research/public-source-audit.md).
+
+This extension is inline AI source verification and self-review. It does not complete the independent person/source-and-method review or alter the conditional bridge. The first dated review table above records the earlier review state; current evidence and unresolved gates are in the linked follow-up.

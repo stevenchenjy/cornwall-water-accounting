@@ -30,7 +30,9 @@ The inferred annual billed volumes are 228,808,194 and 193,898,585 gallons, usin
 | Authorized unbilled use or measurement changes | Unknown | Recorded uses, meter calibration and reconciliation records |
 | Unexplained change in the conditionally calculated residual | 42,005,609 inferred gal | None of the components above has yet been documented |
 
-Unknown amounts are not zero. This unexplained change is conditional on annualization; physical losses, authorized unbilled uses, measurement differences and timing adjustments remain possible components. It is not a measured loss. No amount is attributed to leakage or the July 2024 issuance notice.
+Unknown amounts are not zero. This unexplained change is conditional on annualization; physical losses, authorized unbilled uses, measurement differences and timing adjustments remain possible components. It is not a measured loss. No amount is attributed to leakage or the July 2024 billing transition.
+
+The [public-source follow-up](../research/public-source-audit.md) documents a shortened transition-period announcement and a board resolution about overlapping billing schedules and late fees. These records do not quantify a volume adjustment. Monetary late-fee waivers cannot be counted as gallon adjustments.
 
 **Stopping gate:** obtain focused departmental records and test the [alternative explanations](../research/hypothesis-evidence.csv). If unavailable, publish this unresolved bridge as part of a public-report comparability audit. Expand to monthly/native-cycle reconciliation only after the initial worksheets and definitions are assessed.
 

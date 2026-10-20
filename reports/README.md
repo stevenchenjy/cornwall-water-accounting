@@ -9,3 +9,5 @@
 The prior `preflight` filenames are compatibility entry points to the substantive audit. No final departmental validation or causal explanation is established.
 
 Second-review revision: the annual audit now separates daily-production precision from percentage compatibility, tests annual rounding sensitivity, and the bridge separates rate/calendar effects. See the [second-review response](../research/second-review-response.md) and [source-review handoff](../research/source-review-checklist.csv).
+
+The later [public-source follow-up](../research/public-source-audit.md) documents a shortened-cycle announcement, late-fee resolution and earlier Master Plan discussion. Its [evidence table](../research/public-source-evidence.csv) does not supply actual usage coverage, a gallon adjustment or confirmed annual scope. The generated annual audit and bridge link to those findings while preserving the conditional arithmetic. The [review guide](../research/source-review-guide.md) and [minimum-record register](../research/accounting-evidence-requests.csv) identify the next external evidence gate.
