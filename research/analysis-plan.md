@@ -1,10 +1,10 @@
 # Analysis plan — draft, before substantive research
 
-1. 抓取七份报告并保留原件、URL、SHA256、抓取时间。逐页记录标题中的 reporting year、数据起止日期和 PWS ID。
-2. 双重检查逐项抄录：年总供水、报告日均供水、报告日均计费用水、未核算水百分比。自动文本抽取仅供辅助；物理页码从 1 开始。2024/2025 两行先作为已对照原文的种子，仍待独立人工复核。
-3. 日数 d 为该 calendar year 的 365/366。计算 P/d、B_daily*d、P-B_daily*d、100*(P-B_daily*d)/P。`B_daily*d` 只是由四舍五入日均数推算的年计费量，不是部门提供的年度账单合计。
-4. 同时保留基于报告日均分母的重算结果。日均计费用水若取整数，推算年量的舍入区间为 ±d/2 gallons；未核算比例报告到 0.01 个百分点。诊断阈值在代码中显式为 0.05 pp，超限须检查，过关也不证明统计期间一致。
-5. 未核算残差含消防、街道/下水道清洗、未装表市政用水和可能漏损；不可全部当作管网漏水，也不可直接当作标准审计定义的 non-revenue water。
-6. 并列事件日期、来源及可核实机制。账单签发日期变更不自动证明读表日或统计期间发生同样变更；向部门询问。
-7. 比较 2024–2025 的绝对差、百分比和百分点变化；只做描述性分析。月度数据取得后另记修订计划再考虑季节性／计费滞后。
-8. 独立 reviewer 检查年历、定义、边界、替代解释和出处；最终简报披露 AI 协助、局限和未核对项。
+1. Retrieve seven reports and preserve originals, URLs, SHA256 hashes and retrieval times. Record each cover's reporting year, data-period dates and PWS ID.
+2. Transcribe and cross-check annual production, reported daily production, reported daily billed consumption and reported unaccounted-water percentage. Automatic text extraction is only an aid; physical PDF pages start at 1. The 2024/2025 seed rows have been checked against source text but still require independent human verification.
+3. Let `d` be 365 or 366 for the calendar year. Calculate `P/d`, `B_daily*d`, `P-B_daily*d` and `100*(P-B_daily*d)/P`. Annual billed volume inferred from a rounded daily average is not an observed annual billing-ledger total.
+4. Also retain calculations using the reported daily-production denominator. If daily billed consumption was rounded to an integer, the inferred annual rounding interval is ±d/2 gallons. Reported percentages have 0.01 percentage-point precision. The code uses an explicit 0.05 pp diagnostic threshold; a pass does not establish matching accounting periods.
+5. Unaccounted water includes firefighting, street/sewer cleaning, unmetered municipal use and possible losses. Do not equate the entire residual with leakage or automatically equate it with a standard audit definition of non-revenue water.
+6. Record event dates, sources and testable mechanisms. A change in bill-issuance dates does not prove the same change in meter-reading dates or annual reporting periods. Ask the department to confirm.
+7. Compare absolute, percentage and percentage-point changes between 2024 and 2025 using descriptive analysis. If monthly data is later obtained, document an amended plan before examining seasonality or billing lag.
+8. Have an independent reviewer check calendars, definitions, boundaries, alternative explanations and provenance. Disclose AI assistance, limitations and unresolved items in the final brief.

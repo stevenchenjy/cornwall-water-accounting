@@ -1,13 +1,15 @@
 # Research brief
 
-RQ: 为什么 2024–2025 年总供水量变化较小，报告的计费用水量与未核算水量变化明显？
+**Research question:** Why did reported billed consumption and unaccounted water change substantially between 2024 and 2025 while total water production changed relatively little?
 
-方法：可复现的描述性水量核算与文件审计。2019–2025 年共七个年度；以年报标明的 reporting year / Jan–Dec 数据期为准，不按 PDF 上传年命名数据年度。系统标识 NY3503526 来自 2024/2025 报告封面；完整历年服务边界仍待核对。
+**Method:** Reproducible descriptive water accounting and document audit across seven reporting years, 2019–2025. Use each report's stated reporting year and January–December data period, rather than its upload year. PWS ID NY3503526 appears on the 2024 and 2025 covers; the full historical service boundary still requires verification.
 
-子问题：哪些变化可由计费期间、分母或报告口径解释？哪些工程／水表／供水事件与变化同时出现？哪一组最小月度数据能区分这些解释？
+**Subquestions:** Which changes could reflect billing periods, denominators or reporting definitions? Which infrastructure, meter or supply events occurred around the same time? What is the smallest set of monthly records needed to distinguish these explanations?
 
-范围内：总供水、平均日供水、计费用水、未核算水、日历与舍入核对、事件时间线、后续数据需求。范围外：凭年度残差估算真实漏损、健康风险判断、只有七个年度的因果回归、尚未取得的账单微数据。
+**In scope:** Production totals, average daily production, billed consumption, unaccounted water, calendar and rounding checks, event timelines and follow-up data requirements.
 
-预期成果：两页核算简报、一张年度变化图、年度核算 CSV、来源／事件表和待核对清单。实际成果须明确原始报告值、推算值和部门确认值。
+**Out of scope:** Estimating physical leakage from the entire annual residual, assessing health risk, causal regression on seven annual observations, or analyzing billing microdata that has not been obtained.
 
-使用者：Cornwall-on-Hudson Water Department 及相关 Town/Village 委员会；尚未确认合作或部门需求。年度表和简报以可核实的事实为主，解释列为待验证假设。
+**Planned outputs:** A two-page accounting brief, an annual-change chart, an annual accounting CSV, source and event registers, and specific reconciliation questions. Keep originally reported, inferred and department-confirmed values distinct.
+
+**Intended users:** The Cornwall-on-Hudson Water Department and relevant Town/Village committees. Cooperation and departmental requirements have not been confirmed. Treat proposed explanations as hypotheses until verified.

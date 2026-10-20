@@ -1,14 +1,14 @@
 # Water Accounting and Unaccounted Water in the Cornwall-on-Hudson Water System, 2019–2025
 
-独立研究工作区 · 初始搭建日期：2026-10-19（America/New_York）
+Independent research workspace. Established October 19, 2026 (America/New_York).
 
-为什么 2024–2025 年总供水量变化较小，计费用水量与未核算水量却变化明显？先建立口径一致的 2019–2025 年水量账目，识别需要部门核对的记录。
+Why did reported billed consumption and unaccounted water change substantially between 2024 and 2025 while total water production changed relatively little? First build a consistent 2019–2025 water account and identify records requiring reconciliation with the Water Department.
 
-**当前阶段：研究前基础搭建。** 这不是已完成的研究，也不是供水部门已确认的数据产品。
+**Current stage: research preparation.** The workspace contains a reproducible starting point; the study and departmental validation remain pending.
 
-从 [START_HERE.md](START_HERE.md) 进入。研究范围见 [research/brief.md](research/brief.md)，下一步见 [research/TASKS.md](research/TASKS.md)，agent 分工见 [agents/README.md](agents/README.md)。
+Start with [START_HERE.md](START_HERE.md). See the [research brief](research/brief.md), [task board](research/TASKS.md), [agent roles](agents/README.md) and [initial data diagnostic](reports/preflight.md).
 
-## 快速开始
+## Quick start
 
 ```sh
 uv sync --locked
@@ -17,17 +17,21 @@ make fetch
 make preflight
 ```
 
-`make fetch` 访问公开原始来源并保存本地快照；`make preflight` 生成搭建期诊断。原始文件和行级衍生数据不提交 Git。克隆仓库后需重新抓取本地原始数据。Python 3.11+；依赖记录在 `uv.lock`。
+`make fetch` saves local snapshots of public sources. `make preflight` generates a preparation-stage diagnostic. Raw files and record-level derivatives stay outside Git. After cloning, fetch the raw sources locally before running the diagnostic. Python 3.11 or later is required; resolved dependencies are recorded in `uv.lock`.
 
-另可运行 `make extract` 生成带物理页码的自动文本。优先使用已安装的 Poppler `pdftotext`，否则回退到 pypdf；2019 年复杂 PDF 需要 Poppler。若它不在 PATH，使用 `PDFTOTEXT=/absolute/path/to/pdftotext make extract`。自动抽取不代表人工复核。
+For page-numbered automatic text, run `make extract`. The extractor prefers Poppler `pdftotext` and otherwise falls back to pypdf. The complex 2019 PDF requires Poppler. If it is outside PATH, use `PDFTOTEXT=/absolute/path/to/pdftotext make extract`. Automatic extraction does not count as independent human verification.
 
-## 目录
+## Workspace contents
 
-- `.codex/agents/`：项目范围的真实 Codex custom-agent 配置，继承用户模型和权限。
-- `research/`：研究范围、分析计划、证据／来源清单、任务和决策。
-- `data/seed/`、`data/schema/`、`data/manifests/`：可版本控制的种子表、结构和抓取收据。
-- `data/raw/`、`data/interim/`、`data/processed/`、`data/restricted/`：只在本地保留的原始或行级数据。
-- `src/`、`scripts/`、`tests/`：可复现方法与关键研究口径检查。
-- `reports/`：可以审阅的汇总结果；不含逐户地址或坐标。
+- `.codex/agents/`: project-scoped Codex custom-agent definitions that inherit the parent's model and permissions.
+- `research/`: scope, analysis plan, source and claim registers, tasks and decisions.
+- `data/seed/`, `data/schema/`, `data/manifests/`: versioned seed observations, field definitions and retrieval receipts.
+- `data/raw/`, `data/interim/`, `data/processed/`, `data/restricted/`: local-only originals and record-level working files.
+- `src/`, `scripts/`, `tests/`: reproducible methods and checks for consequential accounting and inventory assumptions.
+- `reports/`: reviewable aggregate outputs without household addresses or coordinates.
 
-研究拟服务 Cornwall-on-Hudson Water Department；尚未取得部门台账或联系部门。AI 协助搭建和分析须在将来对外成果中披露。无自动监控、无人值守研究或后台模型任务。
+## Working language and research status
+
+English is the required language for authored documents, agent instructions, reports, prompts and user-facing responses. `make check` includes a language regression check for authored workspace files. Original evidence remains immutable.
+
+The intended user is the Cornwall-on-Hudson Water Department. Departmental cooperation and access to internal records have not been established. Future external reports must disclose AI assistance. Agents run only when invoked; no recurring monitor or background research task has been scheduled.

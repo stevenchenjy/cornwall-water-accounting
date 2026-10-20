@@ -1,11 +1,11 @@
 # Draft reconciliation questions — not sent
 
-- 2019–2025 年 NY3503526 服务边界、用户数量、批发/外村供水和计量边界是否改变？
-- 年报中的 total produced 和 billed daily 分别来自哪些表和仪表？按用水期、读表期、账单签发期还是收款期汇总？
-- 请提供 2019–2025 月度生产总量、月度计费量和各自统计起止日；如无法提供全部，优先 2023–2025。
-- 2024-07-15 账单签发日期和账单/账号变更是否改变了读表期间、年终截账、估表、冲销或漏列账户？
-- 消防、冲洗、街道/下水道清洗和未装表市政用水是否有单独台账或估算？已记录用水是否扣除？
-- 同期水表更换、主表校准、修漏、供水设施检修和报告公式是否改变？
-- Water Master Plan 是否已包含相同核算与异常解释？可以公开使用哪些已有结果？
+- Did NY3503526's service boundary, customer count, wholesale/out-of-village supply or measurement boundary change during 2019–2025?
+- Which ledgers and meters provide annual production and daily billed consumption? Are totals assigned by usage period, meter-reading period, bill-issuance date or payment date?
+- Could the department provide monthly production, monthly billed volume and their accounting-period boundaries for 2019–2025? If the full period is unavailable, prioritize 2023–2025.
+- Did the July 15, 2024 bill-issuance and account/bill changes affect reading periods, year-end cutoffs, estimated readings, adjustments or omitted accounts?
+- Are firefighting, flushing, street/sewer cleaning and unmetered municipal uses recorded or estimated separately? Are recorded uses deducted from the residual?
+- Did meter replacement, master-meter calibration, leak repairs, facility work or reporting formulas change at the same time?
+- Does the Water Master Plan already cover this accounting or explain the apparent change? Which existing results may be used publicly?
 
-只保留需要的月度汇总，不索取不必要的居民姓名或账单身份信息。
+Request only the monthly aggregates needed for reconciliation; avoid unnecessary resident names or billing identifiers.
