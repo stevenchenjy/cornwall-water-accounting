@@ -15,3 +15,7 @@ Reviewer: the same AI session that prepared the table and code. This is an inlin
 Regression tests cover missing versus zero, omitted denominator, mismatched periods, leap years, conditional rounding, excess billing and pinned provenance. The annual chart was rendered and visually inspected. These checks support the first public-source artifact; they do not replace independent review or authorize causal claims.
 
 Next review should independently inspect original pages, resolve the contextual 2023 billed basis and examine the requested departmental worksheets. If unavailable, retain the public-audit endpoint and unresolved bridge.
+
+## Second-review correction - October 20, 2026
+
+The external ChatGPT review reproduced a +0.6301 gallon/day 2021 warning overlooked by the first narrative. This session reproduced it and replaced the static claim with data-driven reporting, tested annual-total precision scenarios (1/100/1000 gallons), retained the unresolved 2020/2022 results, added the 2020 365-day sensitivity, and decomposed inferred billing change. Confirmation references are required in addition to status fields. This remains AI methods review; the human checklist is pending.

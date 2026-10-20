@@ -45,5 +45,15 @@
     "Annualization uses an explicitly labeled calendar-day assumption until confirmed",
     "human_verified requires a person and documented inspection",
     "Reported quantities remain unchanged; derived values belong in reports"
-  ]
+  ],
+  "precision_sensitivity": {
+    "annual_total_rounding_units_gal": [
+      1,
+      100,
+      1000
+    ],
+    "daily_rounding_unit_gal": 1,
+    "actual_convention": "unconfirmed"
+  },
+  "confirmation_rules": "Document coverage, denominator and boundary with exact evidence references and substantive validation before setting confirmed statuses."
 }

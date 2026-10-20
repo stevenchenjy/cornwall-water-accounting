@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-10-20T02:10:43.581428+00:00",
+  "generated_at_utc": "2026-10-20T15:06:15.466817+00:00",
   "stage": "public_source_comparability_audit",
-  "rounding_assumption": "Nearest printed integer gallon and nearest displayed percentage unit; actual reporting rounding is unconfirmed.",
+  "rounding_assumption": "Annual total nearest 1, 100 or 1000 gallons tested conditionally; daily values nearest 1 gallon and percentage nearest displayed unit. No convention confirmed.",
   "independent_human_review": "pending",
   "annual_audits": [
     {
@@ -49,11 +49,43 @@
       "derived_unaccounted_pct": 27.10012939275762,
       "difference_from_reported_pp": 0.00012939275761780777,
       "conditional_rounding_compatible": true,
+      "annual_production_rounding_half_width_gal": 0.5,
       "conditional_implied_pct_interval": [
         27.100063299623866,
         27.10019548589113
       ],
-      "daily_production_difference_gal": 0.17808219173457474
+      "daily_production_difference_gal": 0.17808219173457474,
+      "conditional_daily_production_rounding_compatible": true,
+      "confirmation_refs": {},
+      "source_precision_sensitivity": [
+        {
+          "annual_total_rounding_unit_gal": 1,
+          "percentage_compatible": true,
+          "implied_pct_interval": [
+            27.100063299623866,
+            27.10019548589113
+          ],
+          "daily_production_compatible": true
+        },
+        {
+          "annual_total_rounding_unit_gal": 100,
+          "percentage_compatible": true,
+          "implied_pct_interval": [
+            27.10005025716815,
+            27.100208528318483
+          ],
+          "daily_production_compatible": true
+        },
+        {
+          "annual_total_rounding_unit_gal": 1000,
+          "percentage_compatible": true,
+          "implied_pct_interval": [
+            27.099931689174905,
+            27.100327095625776
+          ],
+          "daily_production_compatible": true
+        }
+      ]
     },
     {
       "reporting_year": "2020",
@@ -102,11 +134,43 @@
       "derived_unaccounted_pct": 35.99997496844982,
       "difference_from_reported_pp": -0.6000250315501816,
       "conditional_rounding_compatible": false,
+      "annual_production_rounding_half_width_gal": 0.5,
       "conditional_implied_pct_interval": [
         35.99991123534161,
         36.0000387015578
       ],
-      "daily_production_difference_gal": 0.4426229507662356
+      "daily_production_difference_gal": 0.4426229507662356,
+      "conditional_daily_production_rounding_compatible": true,
+      "confirmation_refs": {},
+      "source_precision_sensitivity": [
+        {
+          "annual_total_rounding_unit_gal": 1,
+          "percentage_compatible": false,
+          "implied_pct_interval": [
+            35.99991123534161,
+            36.0000387015578
+          ],
+          "daily_production_compatible": true
+        },
+        {
+          "annual_total_rounding_unit_gal": 100,
+          "percentage_compatible": false,
+          "implied_pct_interval": [
+            35.99990022144234,
+            36.0000497154313
+          ],
+          "daily_production_compatible": true
+        },
+        {
+          "annual_total_rounding_unit_gal": 1000,
+          "percentage_compatible": false,
+          "implied_pct_interval": [
+            35.999800094911464,
+            36.000149841380214
+          ],
+          "daily_production_compatible": true
+        }
+      ]
     },
     {
       "reporting_year": "2021",
@@ -146,7 +210,7 @@
         "billing_coverage_unconfirmed",
         "measurement_boundary_unconfirmed",
         "billing_denominator_assumed",
-        "reported_daily_production_inconsistent"
+        "daily_production_difference_exceeds_0_5_gal_heuristic"
       ],
       "derived_annual_billed_gal": 231797995.0,
       "inferred_billed_rounding_half_width_gal": 182.5,
@@ -154,11 +218,43 @@
       "derived_unaccounted_pct": 17.320123343177958,
       "difference_from_reported_pp": 0.00012334317795748007,
       "conditional_rounding_compatible": true,
+      "annual_production_rounding_half_width_gal": 0.5,
       "conditional_implied_pct_interval": [
         17.320058099915926,
         17.320188586439766
       ],
-      "daily_production_difference_gal": 0.6301369862630963
+      "daily_production_difference_gal": 0.6301369862630963,
+      "conditional_daily_production_rounding_compatible": false,
+      "confirmation_refs": {},
+      "source_precision_sensitivity": [
+        {
+          "annual_total_rounding_unit_gal": 1,
+          "percentage_compatible": true,
+          "implied_pct_interval": [
+            17.320058099915926,
+            17.320188586439766
+          ],
+          "daily_production_compatible": false
+        },
+        {
+          "annual_total_rounding_unit_gal": 100,
+          "percentage_compatible": true,
+          "implied_pct_interval": [
+            17.32004350184114,
+            17.320203184486292
+          ],
+          "daily_production_compatible": true
+        },
+        {
+          "annual_total_rounding_unit_gal": 1000,
+          "percentage_compatible": true,
+          "implied_pct_interval": [
+            17.319910791833937,
+            17.320335893763826
+          ],
+          "daily_production_compatible": true
+        }
+      ]
     },
     {
       "reporting_year": "2022",
@@ -207,11 +303,43 @@
       "derived_unaccounted_pct": 12.779857541710252,
       "difference_from_reported_pp": -0.3701424582897488,
       "conditional_rounding_compatible": false,
+      "annual_production_rounding_half_width_gal": 0.5,
       "conditional_implied_pct_interval": [
         12.779788707151118,
         12.779926376269135
       ],
-      "daily_production_difference_gal": 0.06849315064027905
+      "daily_production_difference_gal": 0.06849315064027905,
+      "conditional_daily_production_rounding_compatible": true,
+      "confirmation_refs": {},
+      "source_precision_sensitivity": [
+        {
+          "annual_total_rounding_unit_gal": 1,
+          "percentage_compatible": false,
+          "implied_pct_interval": [
+            12.779788707151118,
+            12.779926376269135
+          ],
+          "daily_production_compatible": true
+        },
+        {
+          "annual_total_rounding_unit_gal": 100,
+          "percentage_compatible": false,
+          "implied_pct_interval": [
+            12.779772461783933,
+            12.779942621604556
+          ],
+          "daily_production_compatible": true
+        },
+        {
+          "annual_total_rounding_unit_gal": 1000,
+          "percentage_compatible": false,
+          "implied_pct_interval": [
+            12.779624776350229,
+            12.780090306194436
+          ],
+          "daily_production_compatible": true
+        }
+      ]
     },
     {
       "reporting_year": "2023",
@@ -259,11 +387,43 @@
       "derived_unaccounted_pct": 21.740071299922338,
       "difference_from_reported_pp": 7.129992233956273e-05,
       "conditional_rounding_compatible": true,
+      "annual_production_rounding_half_width_gal": 0.5,
       "conditional_implied_pct_interval": [
         21.7399957487318,
         21.740146851112574
       ],
-      "daily_production_difference_gal": null
+      "daily_production_difference_gal": null,
+      "conditional_daily_production_rounding_compatible": null,
+      "confirmation_refs": {},
+      "source_precision_sensitivity": [
+        {
+          "annual_total_rounding_unit_gal": 1,
+          "percentage_compatible": true,
+          "implied_pct_interval": [
+            21.7399957487318,
+            21.740146851112574
+          ],
+          "daily_production_compatible": null
+        },
+        {
+          "annual_total_rounding_unit_gal": 100,
+          "percentage_compatible": true,
+          "implied_pct_interval": [
+            21.739979746025984,
+            21.740162853780866
+          ],
+          "daily_production_compatible": null
+        },
+        {
+          "annual_total_rounding_unit_gal": 1000,
+          "percentage_compatible": true,
+          "implied_pct_interval": [
+            21.739834266582125,
+            21.740308332283387
+          ],
+          "daily_production_compatible": null
+        }
+      ]
     },
     {
       "reporting_year": "2024",
@@ -310,11 +470,43 @@
       "derived_unaccounted_pct": 19.2600298529583,
       "difference_from_reported_pp": 2.9852958299159127e-05,
       "conditional_rounding_compatible": true,
+      "annual_production_rounding_half_width_gal": 0.5,
       "conditional_implied_pct_interval": [
         19.25996513495578,
         19.260094570960597
       ],
-      "daily_production_difference_gal": -0.1147540983511135
+      "daily_production_difference_gal": -0.1147540983511135,
+      "conditional_daily_production_rounding_compatible": true,
+      "confirmation_refs": {},
+      "source_precision_sensitivity": [
+        {
+          "annual_total_rounding_unit_gal": 1,
+          "percentage_compatible": true,
+          "implied_pct_interval": [
+            19.25996513495578,
+            19.260094570960597
+          ],
+          "daily_production_compatible": true
+        },
+        {
+          "annual_total_rounding_unit_gal": 100,
+          "percentage_compatible": true,
+          "implied_pct_interval": [
+            19.259951031965084,
+            19.260108673923714
+          ],
+          "daily_production_compatible": true
+        },
+        {
+          "annual_total_rounding_unit_gal": 1000,
+          "percentage_compatible": true,
+          "implied_pct_interval": [
+            19.25982282273275,
+            19.260236882453295
+          ],
+          "daily_production_compatible": true
+        }
+      ]
     },
     {
       "reporting_year": "2025",
@@ -361,11 +553,74 @@
       "derived_unaccounted_pct": 33.25005249840783,
       "difference_from_reported_pp": 5.2498407832501925e-05,
       "conditional_rounding_compatible": true,
+      "annual_production_rounding_half_width_gal": 0.5,
       "conditional_implied_pct_interval": [
         33.249989557550286,
         33.25011543926517
       ],
-      "daily_production_difference_gal": 0.31506849313154817
+      "daily_production_difference_gal": 0.31506849313154817,
+      "conditional_daily_production_rounding_compatible": true,
+      "confirmation_refs": {},
+      "source_precision_sensitivity": [
+        {
+          "annual_total_rounding_unit_gal": 1,
+          "percentage_compatible": true,
+          "implied_pct_interval": [
+            33.249989557550286,
+            33.25011543926517
+          ],
+          "daily_production_compatible": true
+        },
+        {
+          "annual_total_rounding_unit_gal": 100,
+          "percentage_compatible": true,
+          "implied_pct_interval": [
+            33.249978183034955,
+            33.25012681375513
+          ],
+          "daily_production_compatible": true
+        },
+        {
+          "annual_total_rounding_unit_gal": 1000,
+          "percentage_compatible": true,
+          "implied_pct_interval": [
+            33.24987477817233,
+            33.25023021803154
+          ],
+          "daily_production_compatible": true
+        }
+      ]
     }
-  ]
+  ],
+  "2020_365_day_sensitivity": {
+    "status": "conditional_accounting_diagnostic",
+    "calendar_days": 366,
+    "production_period_days": null,
+    "billing_coverage_days": null,
+    "billing_denominator_days": 365,
+    "billing_denominator_status": "assumed_365_day_sensitivity",
+    "comparability_established": false,
+    "warnings": [
+      "production_period_unconfirmed",
+      "billing_coverage_unconfirmed",
+      "measurement_boundary_unconfirmed",
+      "billing_denominator_assumed",
+      "percentage_difference_exceeds_0_05_pp_heuristic",
+      "percentage_outside_conditional_rounding_interval"
+    ],
+    "derived_annual_billed_gal": 183584780.0,
+    "inferred_billed_rounding_half_width_gal": 182.5,
+    "derived_unaccounted_gal": 104052220.0,
+    "derived_unaccounted_pct": 36.17483842482017,
+    "difference_from_reported_pp": -0.42516157517982833,
+    "conditional_rounding_compatible": false,
+    "annual_production_rounding_half_width_gal": 500,
+    "conditional_implied_pct_interval": [
+      36.174664029078365,
+      36.175012819955676
+    ],
+    "daily_production_difference_gal": null,
+    "conditional_daily_production_rounding_compatible": null,
+    "confirmation_refs": {}
+  }
 }

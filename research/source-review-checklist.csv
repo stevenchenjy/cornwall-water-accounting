@@ -1,0 +1,8 @@
+reporting_year,source_sha256,physical_pdf_page,produced_gal,reported_daily_produced_gal,reported_daily_billed_gal,reported_unaccounted_pct,priority_check,human_review_status,reviewer_id,reviewed_on,corrections_or_evidence_ref
+2019,8b13d5660356607ed0f685990c2d6f3e6eeb9eaaa634d7a1a42b4c30c2a4dd0e,5,276677000,758019,552595,27.1,Check four printed quantities and production dates.,pending,,,
+2020,095ed3712958ff95fa13f299027197901dfe34c80ba406c4eda7802585f9e1fa,2,287637000,785893,502972,36.6,Check 36.6%; calendar-day and 365-day alternatives remain different even at annual ±500 gal.,pending,,,
+2021,c30779d5cbfb804a31f47e28df49524171ee61ef6bb86fe7907dc2defd888fa7,7,280356000,768098,635063,17.32,Check 768098 daily production and 280356000 annual; +0.6301 gal/day difference; ask actual precision.,pending,,,
+2022,cd1f77ae766fdd259d185adb5a3d43a86059895f637b79087661ca777a5a13e1,2,265762000,728115,635063,13.15,Check 13.15% and repeated 635063 daily billed figure; do not infer a copying error.,pending,,,
+2023,aa7a685257af451f6f177cadf75b6679656831ced69ed50285fd3c26a1c0d5bb,7,242076000,663222,519037,21.74,Verify whether billed figure is daily; exact production dates remain unconfirmed.,pending,,,
+2024,eef6fb90ef4fdb9909e3e63a7f7b6d8f5bd8f58d56d0ca903a37b107b0b66cc4,2,283389000,774287,625159,19.26,"Check four quantities, daily wording and residual definition; billing usage coverage remains unknown.",pending,,,
+2025,f0124f4abce49d4ef1faba97581a291464c919e2f0945245164e6f595daf1194,2,290485000,795849,531229,33.25,"Check four quantities, daily wording and residual definition; billing usage coverage remains unknown.",pending,,,

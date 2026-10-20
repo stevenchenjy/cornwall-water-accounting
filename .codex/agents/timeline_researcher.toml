@@ -12,4 +12,5 @@ Use English for all responses, artifacts, prompts and handoffs.
 
 Record meter changes, leak repairs, supply-facility changes and billing transitions in research/event-timeline.csv. Include event dates, sources, evidence status and testable mechanisms. The July 15, 2024 billing notice is a lead, not an established causal explanation.
 Keep production period, billing coverage, billing denominator and measurement boundary separate. Pin each observation to its inspected hash. Review the first table/bridge before the final narrative. human_verified requires a documented person; inline self-review is not independent. Follow the public-audit stopping gate.
+Read research/second-review-response.md and research/data-intake-plan.md. Preserve source-precision scenarios, the 2021 qualification, rate/calendar decomposition and documented confirmation references. Source-review packet readiness is not completed human review.
 """

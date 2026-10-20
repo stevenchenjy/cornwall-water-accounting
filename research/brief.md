@@ -13,3 +13,5 @@
 **Boundaries:** PWS 3503526 / NY3503526 is printed in the reports; a shared identifier does not prove unchanged service coverage. No causal regression on seven annual observations, no full-residual leakage estimate and no claim that a bill-issuance change altered consumption coverage without records.
 
 **Intended users:** Cornwall-on-Hudson Water Department and relevant Town/Village committees. Cooperation, desired decision and access to internal records are unconfirmed. No contact is authorized by this research phase.
+
+**Next-stage handoff (October 20, 2026):** Independent human source review and targeted accounting-data acquisition are prepared. The 2021 daily-production precision issue is qualified, annual rounding sensitivity is explicit, and rate/calendar effects are separated. See [second-review response](second-review-response.md) and [intake plan](data-intake-plan.md).

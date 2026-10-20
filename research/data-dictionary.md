@@ -20,4 +20,4 @@ The versioned source table is [annual-water.csv](../data/seed/annual-water.csv).
 | verification_status | `ai_text_and_visual_checked` means AI checked extracted text and a rendered original page; independent human check remains pending |
 | notes | Interpretation qualifications and provenance |
 
-Empty is missing, never zero. Printed quantities remain distinct from derived annual billing and inferred residual. Conditional rounding assumes nearest integer gallons and the displayed percentage unit; departmental rounding practices remain unknown.
+Empty is missing, never zero. Printed quantities remain distinct from derived annual billing and inferred residual. Source precision is tested under nearest-1, nearest-100 and nearest-1000-gallon annual totals, conditional nearest-gallon daily values and the displayed percentage unit. Trailing zeros do not establish the rule. `conditional_daily_production_rounding_compatible` is separate from the percentage check; confirmation references require substantive documentary validation.

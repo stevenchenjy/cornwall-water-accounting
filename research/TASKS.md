@@ -2,11 +2,11 @@
 
 | ID | Work | Status | Acceptance / next gate |
 |---|---|---|---|
-| W00 | Workspace foundation | complete | No further setup engineering needed |
-| W01 | Seven-year accounting transcription and pinned source checks | complete AI pass | All seven original accounting pages inspected; independent human check pending |
-| W02 | Period-explicit arithmetic audit and 2024–2025 bridge | complete conditional first pass | Reported/derived values separate; unresolved coverage visible; no causal attribution |
-| W02R | Early methods review of table and bridge | self-review recorded; independent review pending | Challenge provenance, period assumptions, rounding and 2020/2022 discrepancies before final narrative |
-| W03 | Focused event and existing-work check | first pass complete | Full Master Plan scope and relevant mechanisms remain unresolved |
-| W04 | Focused request for definitions and 2024/2025 worksheets | draft ready; not sent | Contact requires user authorization; no customer identities |
-| W05 | Preliminary annual chart and comparability report | first increment | Final short departmental brief follows review and stopping decision |
-| W06 | Reconcile departmental response or close public-source audit | gated | Internal records unavailable means document unresolved bridge; do not invent a cause |
+| W00 | Workspace foundation | complete | No additional runtime setup |
+| W01 | Seven-year extraction and pinned AI checks | complete AI pass | Human source review pending |
+| W02 | Accounting/rounding audit and bridge | revised after second review | 2021 narrative agrees with diagnostics; source-precision and 2020 day-count sensitivity included |
+| W02R | Independent source-and-method review | ready for human handoff | Seven-year checklist and source-review index; actual reviewer/date/corrections required |
+| W03 | Existing-work scope | initial public check complete | Full Master Plan and departmental use unresolved |
+| W04 | Targeted accounting request | reviewed draft ready; not sent | Human-check quantitative attachment; obtain sender/recipient authorization for contact |
+| W05 | Accounting evidence intake | prepared; no records received | Preserve source/period/scope/rounding and exact confirmation references |
+| W06 | Explanation or bounded audit closeout | gated on W02R/W05 | Documented reconciliation; otherwise retain unresolved conditional residual |

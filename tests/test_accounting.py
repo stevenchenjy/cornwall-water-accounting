@@ -3,8 +3,9 @@ import sys
 import unittest
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'src'))
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
-from water_accounting import days_in_year, reconcile, period_days
+from water_accounting import days_in_year, reconcile, period_days, billing_change_components
 from _common import pinned_receipt
+from audit_water import daily_production_summary
 
 
 def calendar_scenario(year, *args, **kwargs):
@@ -41,9 +42,54 @@ class AccountingChecks(unittest.TestCase):
     def test_only_explicit_confirmations_allow_comparability(self):
         result = reconcile(2025,365000,900,10,billing_days=365,
             billing_denominator_status='department_confirmed',boundary_status='confirmed',
+            confirmation_refs=dict(billing_coverage='synthetic-ledger',billing_denominator='synthetic-worksheet',measurement_boundary='synthetic-boundary'),
             production_start='2025-01-01',production_end='2025-12-31',
             billing_start='2025-01-01',billing_end='2025-12-31')
         self.assertTrue(result['comparability_established'])
+
+    def test_confirmation_status_without_documents_cannot_establish_comparability(self):
+        result=reconcile(2025,365000,900,10,billing_days=365,
+            billing_denominator_status='department_confirmed',boundary_status='confirmed',
+            production_start='2025-01-01',production_end='2025-12-31',
+            billing_start='2025-01-01',billing_end='2025-12-31')
+        self.assertFalse(result['comparability_established'])
+        self.assertIn('department_confirmation_documentary_references_missing',result['warnings'])
+
+    def test_2021_daily_precision_qualification(self):
+        results=[calendar_scenario(2021,280356000,635063,17.32,768098,
+                    production_start='2021-01-01',production_end='2021-12-31',
+                    annual_production_rounding_half_width_gal=h) for h in (.5,50,500)]
+        self.assertAlmostEqual(results[0]['daily_production_difference_gal'],.6301369863)
+        self.assertEqual([r['conditional_daily_production_rounding_compatible'] for r in results],[False,True,True])
+
+    def test_historical_discrepancies_survive_annual_nearest_thousand(self):
+        for year,P,B,pct,precision in [(2020,287637000,502972,36.6,1),(2022,265762000,635063,13.15,2)]:
+            self.assertFalse(calendar_scenario(year,P,B,pct,percentage_decimal_places=precision,
+                annual_production_rounding_half_width_gal=500)['conditional_rounding_compatible'])
+        counterfactual=reconcile(2020,287637000,502972,36.6,billing_days=365,
+            billing_denominator_status='assumed_365_day_sensitivity',percentage_decimal_places=1,
+            annual_production_rounding_half_width_gal=500)
+        self.assertFalse(counterfactual['conditional_rounding_compatible'])
+        self.assertAlmostEqual(counterfactual['derived_unaccounted_pct'],36.1748,places=4)
+
+    def test_daily_narrative_follows_diagnostic_data_including_precision_warning(self):
+        row=dict(reporting_year='2021',produced_gal='280356000',production_period_days=365,
+                 reported_daily_produced_gal='768098',daily_production_difference_gal=.6301369863,
+                 source_precision_sensitivity=[dict(annual_total_rounding_unit_gal=unit,
+                    daily_production_compatible=unit!=1) for unit in (1,100,1000)])
+        narrative=daily_production_summary([row])
+        self.assertIn('2021:',narrative);self.assertIn('+0.6301',narrative)
+        self.assertIn('nearest 1 gal: incompatible',narrative)
+        self.assertIn('nearest 1,000 gal: compatible',narrative)
+        row['reporting_year']='synthetic-future-year'
+        self.assertIn('synthetic-future-year:',daily_production_summary([row]))
+
+    def test_billing_bridge_decomposes_rate_and_calendar(self):
+        result=billing_change_components(625159,366,531229,365,common_days=365)
+        self.assertEqual(result['daily_rate_component_gal'],34284450)
+        self.assertEqual(result['calendar_component_gal'],625159)
+        self.assertEqual(result['total_decrease_gal'],34909609)
+        self.assertEqual(result['daily_rate_component_gal']+result['calendar_component_gal'],result['total_decrease_gal'])
 
     def test_2020_and_2022_discrepancies_survive_display_precision(self):
         for year,P,B,pct,precision in [(2020,287637000,502972,36.6,1),(2022,265762000,635063,13.15,2)]:

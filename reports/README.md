@@ -7,3 +7,5 @@
 - [methods-review.md](methods-review.md): early self-review and pending independent checks.
 
 The prior `preflight` filenames are compatibility entry points to the substantive audit. No final departmental validation or causal explanation is established.
+
+Second-review revision: the annual audit now separates daily-production precision from percentage compatibility, tests annual rounding sensitivity, and the bridge separates rate/calendar effects. See the [second-review response](../research/second-review-response.md) and [source-review handoff](../research/source-review-checklist.csv).

@@ -43,3 +43,7 @@ Unaccounted water includes authorized unbilled uses and possible losses; never e
 ## Revised research gates
 
 Pause additional workspace/runtime engineering. Review the first source table or workflow specification before a final narrative, optimizer or optional map. Use `ai_text_and_visual_checked` for AI PDF inspection; `human_verified` requires a documented person. Record whether review was inline self-review or independent. Follow the current stopping/modeling gates in research/analysis-plan.md.
+
+## Second-review requirements
+
+Read research/second-review-response.md and research/data-intake-plan.md. Keep annual-total source precision conditional; synchronize generated narrative with diagnostic warnings. Use exact documentary references for confirmations and retain the rate/calendar decomposition. A prepared source-review index does not complete human verification.
