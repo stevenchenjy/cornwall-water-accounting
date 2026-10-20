@@ -15,3 +15,7 @@ The lead defines the task; source and data roles prepare inputs; the analyst pro
 Every handoff must include `task_id`, input paths and snapshot hashes, output paths, evidence and assumptions, verification commands and results, unresolved items and the next responsible role. Assign exclusive write paths. Reviewers must not edit the artifacts they review.
 
 `AGENTS.md` also supports this workflow in a single-agent session. If the client cannot dispatch a custom agent, read the corresponding TOML as a role specification and execute the phases sequentially. State clearly that no independent child agent ran.
+
+## Current research gates
+
+The user authorized research after external feedback on October 19, 2026. Use the five existing roles; pause further workspace/runtime engineering. Bring methods review forward to the first table or transition specification. A role name does not establish independent review or human verification. See research/STATUS.md and TASKS.md for current evidence gates.

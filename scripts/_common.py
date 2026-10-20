@@ -40,3 +40,10 @@ def latest_receipts():
         return {}
     with manifest.open(newline='', encoding='utf-8') as stream:
         return {row['source_id']: row for row in csv.DictReader(stream)}
+
+def pinned_receipt(source_id, sha256, receipts):
+    """Never silently associate an observation with a later source revision."""
+    matches = [r for r in receipts if r['source_id'] == source_id and r['sha256'] == sha256]
+    if not matches:
+        raise ValueError(f'No receipt for pinned observation: {source_id} / {sha256}')
+    return matches[0]

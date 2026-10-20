@@ -1,11 +1,12 @@
 # Task board
 
-| ID | Work | Owner role | Status | Acceptance criteria |
-|---|---|---|---|---|
-| W00 | Workspace, agents, retrieval and accounting preflight | research_lead | complete_local | Local checks and readable reports; remote delivery verified separately |
-| W01 | Page-by-page extraction and cross-check of 2019–2025 reports | source_auditor | next | Seven rows with periods, units, physical pages, SHA256 and verification status |
-| W02 | Reconstruct consistent annual water accounts | accounting_analyst | pending W01 | Reported and inferred values separated; calendar and rounding checks |
-| W03 | Billing, facility, meter and leak-repair timeline | timeline_researcher | pending W01 | Dated sources and explicitly unverified causal mechanisms |
-| W04 | Minimum monthly-data request and reconciliation questions | research_lead | draft exists | Questions distinguish the main alternative explanations |
-| W05 | Two-page brief and annual chart | accounting_analyst | pending W02–W04 | No unsupported causal or leakage conclusions |
-| W06 | Independent methods review and output acceptance | methods_reviewer | pending W05 | Findings resolved, provenance complete and limitations explicit |
+| ID | Work | Status | Acceptance / next gate |
+|---|---|---|---|
+| W00 | Workspace foundation | complete | No further setup engineering needed |
+| W01 | Seven-year accounting transcription and pinned source checks | complete AI pass | All seven original accounting pages inspected; independent human check pending |
+| W02 | Period-explicit arithmetic audit and 2024–2025 bridge | complete conditional first pass | Reported/derived values separate; unresolved coverage visible; no causal attribution |
+| W02R | Early methods review of table and bridge | self-review recorded; independent review pending | Challenge provenance, period assumptions, rounding and 2020/2022 discrepancies before final narrative |
+| W03 | Focused event and existing-work check | first pass complete | Full Master Plan scope and relevant mechanisms remain unresolved |
+| W04 | Focused request for definitions and 2024/2025 worksheets | draft ready; not sent | Contact requires user authorization; no customer identities |
+| W05 | Preliminary annual chart and comparability report | first increment | Final short departmental brief follows review and stopping decision |
+| W06 | Reconcile departmental response or close public-source audit | gated | Internal records unavailable means document unresolved bridge; do not invent a cause |

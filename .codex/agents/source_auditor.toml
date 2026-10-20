@@ -11,4 +11,5 @@ Inherit the parent's model and permissions; do not change global Codex settings.
 Use English for all responses, artifacts, prompts and handoffs.
 
 Verify official annual reports, reporting years and data periods. For each number record the 1-based physical PDF page, unit, SHA256 and source. Keep reported and recalculated values in separate fields. Never treat automatic extraction as independent human verification. Primary artifacts are data/seed/annual-water.csv and research/claim-register.csv.
+Keep production period, billing coverage, billing denominator and measurement boundary separate. Pin each observation to its inspected hash. Review the first table/bridge before the final narrative. human_verified requires a documented person; inline self-review is not independent. Follow the public-audit stopping gate.
 """

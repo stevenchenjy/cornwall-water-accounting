@@ -1,20 +1,49 @@
 {
   "table": "data/seed/annual-water.csv",
-  "missing_value": "empty CSV cell; never zero-fill",
-  "units": "US gallons, gallons/day, percent (0–100)",
-  "source_link": "source_id -> research/source-register.csv and data/manifests/retrievals.csv",
+  "missing_value": "empty cell; never zero-fill",
+  "units": "US gallons; gallons/day; percent in 0\u2013100 units",
+  "provenance_join": [
+    "source_id",
+    "source_sha256"
+  ],
+  "verification_statuses": [
+    "pending_extraction",
+    "source_text_checked",
+    "ai_text_and_visual_checked",
+    "human_verified"
+  ],
   "fields": {
-    "reporting_year": "integer calendar reporting year, not PDF publication year",
-    "period_start": "ISO date or empty until checked",
-    "period_end": "ISO date or empty until checked",
-    "pws_id": "reported public water system identifier or empty",
-    "produced_gal": "positive reported annual total or empty",
-    "reported_daily_produced_gal": "reported daily production or empty",
-    "reported_daily_billed_gal": "reported daily billed volume or empty",
-    "reported_unaccounted_pct": "reported percentage in 0–100 units or empty",
-    "source_id": "stable source-register identifier",
-    "physical_pdf_page": "1-based physical PDF page or empty",
-    "verification_status": "pending_extraction | source_text_checked | human_verified",
-    "notes": "provenance and limitations; derived values are kept outside this source table"
-  }
+    "reporting_year": "See research/data-dictionary.md",
+    "report_coverage_start": "See research/data-dictionary.md",
+    "report_coverage_end": "See research/data-dictionary.md",
+    "report_coverage_kind": "See research/data-dictionary.md",
+    "production_start": "See research/data-dictionary.md",
+    "production_end": "See research/data-dictionary.md",
+    "production_period_status": "See research/data-dictionary.md",
+    "billing_coverage_start": "See research/data-dictionary.md",
+    "billing_coverage_end": "See research/data-dictionary.md",
+    "billing_coverage_status": "See research/data-dictionary.md",
+    "billing_denominator_days": "See research/data-dictionary.md",
+    "billing_denominator_status": "See research/data-dictionary.md",
+    "measurement_boundary_status": "See research/data-dictionary.md",
+    "pws_id_reported": "See research/data-dictionary.md",
+    "produced_gal": "See research/data-dictionary.md",
+    "reported_daily_produced_gal": "See research/data-dictionary.md",
+    "reported_daily_billed_gal": "See research/data-dictionary.md",
+    "daily_billed_basis_status": "See research/data-dictionary.md",
+    "reported_unaccounted_pct": "See research/data-dictionary.md",
+    "percentage_decimal_places": "See research/data-dictionary.md",
+    "source_id": "See research/data-dictionary.md",
+    "source_sha256": "See research/data-dictionary.md",
+    "physical_pdf_page": "See research/data-dictionary.md",
+    "verification_status": "See research/data-dictionary.md",
+    "notes": "See research/data-dictionary.md"
+  },
+  "rules": [
+    "report_coverage is water-quality testing coverage, not a billing period",
+    "Separate production dates, billing coverage and billing denominator",
+    "Annualization uses an explicitly labeled calendar-day assumption until confirmed",
+    "human_verified requires a person and documented inspection",
+    "Reported quantities remain unchanged; derived values belong in reports"
+  ]
 }

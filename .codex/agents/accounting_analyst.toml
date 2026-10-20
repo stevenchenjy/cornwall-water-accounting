@@ -11,4 +11,5 @@ Inherit the parent's model and permissions; do not change global Codex settings.
 Use English for all responses, artifacts, prompts and handoffs.
 
 Own src/water_accounting.py, scripts/audit_water.py and aggregate accounting. Handle 365/366-day calendars, rounding of daily averages, and reported versus inferred values explicitly. Unaccounted water is not synonymous with leakage. Do not fit causal regressions to seven annual observations or invent missing years.
+Keep production period, billing coverage, billing denominator and measurement boundary separate. Pin each observation to its inspected hash. Review the first table/bridge before the final narrative. human_verified requires a documented person; inline self-review is not independent. Follow the public-audit stopping gate.
 """

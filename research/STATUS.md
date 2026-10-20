@@ -1,17 +1,12 @@
 # Current status
 
-Stage: bootstrap / pre-research. Setup date: 2026-10-19 (America/New_York).
+Stage: active research — first public-source comparability audit. Revision date: October 19, 2026 (America/New_York).
 
-- User supplied two scoped preliminary proposals. This repository contains only **cornwall-water-accounting**.
-- Agents are configured, not running continuously. Full historical extraction, modeling and independent research review have not started.
-- `reports/preflight.md` records actual retrieval and diagnostic results; it is not a final research finding.
-- No department contact, fieldwork, resident outreach or external report delivery has occurred.
-- Next: W01: review the 2019–2025 annual reports page by page and complete an annual table with units, physical PDF pages, reporting years, data periods and verification status.
+- Seven original accounting paragraphs are transcribed and AI text/visually checked, with exact PDF SHA256, physical pages and retrieval receipts. Independent human inspection remains pending.
+- The generated [annual audit](../reports/annual-audit.md) flags conditional arithmetic discrepancies in 2020 and 2022. The [2024–2025 bridge](../reports/reconciliation-bridge.md) remains unexplained; calendar-day inferred billing is not an observed ledger total.
+- Production dates, report testing coverage, billing dates, denominator and measurement boundary are separate. Billing coverage and system/customer comparability remain unconfirmed.
+- A multi-hypothesis matrix, focused 2024/2025 request and existing-work check are prepared. The full Water Master Plan has not been obtained.
+- Next: independent review of the first table and bridge, plus a user-authorized request for definitions/existing analyses. Stop at a public-source audit if internal inputs are unavailable.
+- No causal explanation, physical leakage total, departmental endorsement, contact, fieldwork or external departmental delivery is established.
 
-Required before a final study: reconcile source definitions, resolve relevant data quality issues, review the actual output and document remaining uncertainty.
-
-Local `make check` passed: 6 domain checks plus 2 language regression cases and structure/TOML validation. Custom-agent runtime dispatch has not been exercised; configuration files follow the current official schema.
-
-Language policy: English throughout all authored content, agent instructions, prompts and future responses. Earlier conversation messages and historical commits remain historical records.
-
-Repository access: public, explicitly requested by the user on October 19, 2026. Anonymous GitHub API access was verified. Raw evidence and record-level working files remain local-only.
+Five agent definitions remain available; roles were used sequentially inline. No child agent or independent reviewer ran. Additional setup/runtime engineering is paused. English remains required. This public repository contains aggregate results and code; raw evidence stays local and ignored.

@@ -1,15 +1,15 @@
-# Research brief
+# Research brief — revised direction
 
-**Research question:** Why did reported billed consumption and unaccounted water change substantially between 2024 and 2025 while total water production changed relatively little?
+**Primary question:** Are the 2024 and 2025 reported water accounts comparable, and how much of the apparent change can be reconciled using documented definitions, accounting periods and recorded adjustments?
 
-**Method:** Reproducible descriptive water accounting and document audit across seven reporting years, 2019–2025. Use each report's stated reporting year and January–December data period, rather than its upload year. PWS ID NY3503526 appears on the 2024 and 2025 covers; the full historical service boundary still requires verification.
+**First-stage design:** A public-report comparability audit of 2019–2025, with a focused 2024–2025 reconciliation. Separate water-quality report coverage, production dates, billed-volume coverage, daily-average denominator and customer/measurement boundary. Calendar-day inferred annual billing is an explicitly conditional calculation, not an observed ledger total.
 
-**Subquestions:** Which changes could reflect billing periods, denominators or reporting definitions? Which infrastructure, meter or supply events occurred around the same time? What is the smallest set of monthly records needed to distinguish these explanations?
+**First results:** All seven accounting paragraphs have AI text and visual checks tied to exact PDF hashes and physical pages. Under calendar-day annualization, the 2020 and 2022 percentages differ from the printed inputs beyond conditional rounding. The 2024/2025 percentages are arithmetically compatible, but their billing periods and boundaries remain unconfirmed. See [annual audit](../reports/annual-audit.md) and [bridge](../reports/reconciliation-bridge.md).
 
-**In scope:** Production totals, average daily production, billed consumption, unaccounted water, calendar and rounding checks, event timelines and follow-up data requirements.
+**Contribution to test:** A traceable reconciliation or repeatable reporting procedure that the department finds useful. Originality and departmental use are unestablished. Review the existing Water Master Plan before expanding the study; the earlier local water/energy analysis is documented.
 
-**Out of scope:** Estimating physical leakage from the entire annual residual, assessing health risk, causal regression on seven annual observations, or analyzing billing microdata that has not been obtained.
+**Outputs:** A seven-year reported/derived table, annual chart, explicit unresolved bridge, hypothesis/evidence matrix, narrow request draft and eventual short brief. Complete the public-source audit if internal records remain unavailable. Independent human review remains pending.
 
-**Planned outputs:** A two-page accounting brief, an annual-change chart, an annual accounting CSV, source and event registers, and specific reconciliation questions. Keep originally reported, inferred and department-confirmed values distinct.
+**Boundaries:** PWS 3503526 / NY3503526 is printed in the reports; a shared identifier does not prove unchanged service coverage. No causal regression on seven annual observations, no full-residual leakage estimate and no claim that a bill-issuance change altered consumption coverage without records.
 
-**Intended users:** The Cornwall-on-Hudson Water Department and relevant Town/Village committees. Cooperation and departmental requirements have not been confirmed. Treat proposed explanations as hypotheses until verified.
+**Intended users:** Cornwall-on-Hudson Water Department and relevant Town/Village committees. Cooperation, desired decision and access to internal records are unconfirmed. No contact is authorized by this research phase.

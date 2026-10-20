@@ -1,0 +1,11 @@
+{
+  "generated_at_utc": "2026-10-20T02:10:43.581428+00:00",
+  "basis": "explicit_calendar_day_assumption_unconfirmed_billing_coverage",
+  "reported_percentage_change_pp": 13.989999999999998,
+  "production_change_gal": 7096000.0,
+  "inferred_annual_billed_change_gal": -34909609.0,
+  "inferred_residual_change_gal": 42005609.0,
+  "documented_causal_adjustments_gal": null,
+  "unresolved_inferred_change_gal": 42005609.0,
+  "interpretation": "Arithmetic decomposition only; no volume has been attributed to a documented causal explanation."
+}

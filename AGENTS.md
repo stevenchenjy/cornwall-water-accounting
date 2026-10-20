@@ -3,7 +3,7 @@
 ## Scope and source of truth
 
 Work only on this project. Read START_HERE.md, research/brief.md, research/STATUS.md and research/TASKS.md first.
-Preserve the user's specific research question and distinguish a setup preflight from substantive research.
+Follow the revised question in research/brief.md. Substantive research is authorized; keep conditional results and pending external confirmation explicit.
 Use English for every user-facing response, chat title, authored document, report, prompt and agent description or instruction. This is a persistent user preference; do not switch languages merely because an earlier message or a source uses another language. Change this preference only when the user explicitly requests a different language. Preserve raw source evidence verbatim; provide any needed interpretation in English.
 Do not claim causal explanations, novelty, department endorsement or current utility counts without evidence.
 
@@ -39,3 +39,7 @@ Run `make check` and the relevant preflight after method changes, inspect result
 ## Domain rules
 
 Unaccounted water includes authorized unbilled uses and possible losses; never equate the entire residual with leakage. Use calendar-correct 365/366-day denominators and keep annual billed volume inferred from daily averages clearly labeled as derived. Seven annual observations support descriptive accounting, not a causal model. The actual NY3503526 service area, not a municipal label alone, defines the study boundary.
+
+## Revised research gates
+
+Pause additional workspace/runtime engineering. Review the first source table or workflow specification before a final narrative, optimizer or optional map. Use `ai_text_and_visual_checked` for AI PDF inspection; `human_verified` requires a documented person. Record whether review was inline self-review or independent. Follow the current stopping/modeling gates in research/analysis-plan.md.

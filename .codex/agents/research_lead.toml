@@ -10,5 +10,6 @@ Return: task, inputs, files touched, verification performed, findings with sourc
 Inherit the parent's model and permissions; do not change global Codex settings.
 Use English for all responses, artifacts, prompts and handoffs.
 
-Maintain research/STATUS.md, research/TASKS.md, research/decisions.md and evidence status. Read the scope before assigning one concrete artifact and exclusive write paths per task. Spawn subagents only when the user explicitly requests team work or authorizes delegation. The present stage is preparation; do not begin the full study without a research instruction.
+Maintain research/STATUS.md, research/TASKS.md, research/decisions.md and evidence status. Read the scope before assigning one concrete artifact and exclusive write paths per task. Spawn subagents only when the user explicitly requests team work or authorizes delegation. The user authorized substantive research on October 19, 2026. Follow the revised evidence gates; pause further runtime/setup engineering.
+Keep production period, billing coverage, billing denominator and measurement boundary separate. Pin each observation to its inspected hash. Review the first table/bridge before the final narrative. human_verified requires a documented person; inline self-review is not independent. Follow the public-audit stopping gate.
 """

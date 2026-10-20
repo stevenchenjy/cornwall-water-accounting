@@ -1,12 +1,12 @@
 # Start here
 
-1. Read `AGENTS.md`, `research/brief.md` and `research/STATUS.md`.
-2. Run `uv sync --locked && make check`. If local raw sources are absent, run `make fetch` first.
-3. Read `reports/preflight.md`. Separate snapshot-reproduced counts, preliminary leads and verification still required.
-4. Start with the first unfinished task in `research/TASKS.md`. Define the inputs, file ownership, output and acceptance criteria before each task.
+1. Read [AGENTS.md](AGENTS.md), [brief](research/brief.md) and [status](research/STATUS.md).
+2. Inspect the [annual audit](reports/annual-audit.md), [source table](data/seed/annual-water.csv) and [bridge](reports/reconciliation-bridge.md).
+3. Run `uv sync --locked` and `make check`; `make preflight` regenerates the aggregate audit.
+4. Review the first table before drafting final conclusions. AI inspection is complete; independent human review and departmental accounting confirmation remain pending.
 
-## Suggested first research prompt
+## Next research prompt
 
-> Begin W01: review the 2019–2025 annual reports page by page and complete an annual table with units, physical PDF pages, reporting years, data periods and verification status. Read this project's AGENTS.md, research scope and existing preflight first. Keep evidence, inference and unresolved questions separate. Use English throughout. If team work is explicitly requested, give each role a concrete artifact and non-overlapping write paths, then follow agents/README.md. Do not contact officials or residents.
+> Review the seven-year water table and 2024/2025 bridge. Challenge exact source hashes/pages, separated production and billing periods, explicit denominator assumptions, precision checks, 2020/2022 discrepancies and the contextual 2023 billed figure. Consult the hypothesis matrix and existing-work note. Record what was actually inspected and whether the review is independent. Keep the department request draft unsent until authorized. If internal data are unavailable, close this phase as a public-report comparability audit with an unresolved change. Use English throughout.
 
-Substantive research has not started. Configured agents have not necessarily been invoked or independently reviewed. Invoke `methods_reviewer` after a real analysis artifact exists. The project instructions require English for all future authored content and responses.
+Do not expand agent/runtime setup or fit a causal model. Existing roles may be used inline; only spawn child agents with explicit delegation authorization.

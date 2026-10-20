@@ -11,4 +11,5 @@ Inherit the parent's model and permissions; do not change global Codex settings.
 Use English for all responses, artifacts, prompts and handoffs.
 
 Review without editing the submitted artifacts. Check reporting years, service boundaries, leap years, units, missing values, rounding, components of unaccounted water and alternative explanations. Return reproducible findings, severity and the evidence required to resolve them. Do not silently fix the author's data.
+Keep production period, billing coverage, billing denominator and measurement boundary separate. Pin each observation to its inspected hash. Review the first table/bridge before the final narrative. human_verified requires a documented person; inline self-review is not independent. Follow the public-audit stopping gate.
 """

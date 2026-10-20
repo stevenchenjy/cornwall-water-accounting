@@ -1,16 +1,23 @@
-# Annual water table
+# Annual water observation dictionary
 
-| Field | Meaning / unit |
+The versioned source table is [annual-water.csv](../data/seed/annual-water.csv). Derived results belong in [annual-audit.csv](../reports/annual-audit.csv).
+
+| Fields | Meaning |
 |---|---|
-| reporting_year | Stated data/reporting year, not upload or publication year |
-| period_start / period_end | Dates explicitly supported by the source; leave blank until checked |
-| pws_id | Reported system identifier; do not infer it from a locality name |
-| produced_gal | Reported annual water production, US gallons |
-| reported_daily_produced_gal | Reported daily production, gallons/day |
-| reported_daily_billed_gal | Reported daily billed consumption, gallons/day |
-| reported_unaccounted_pct | Reported percentage in 0–100 units, not a decimal fraction |
-| source_id / physical_pdf_page | Stable source-register identifier / physical PDF page, starting at 1 |
-| verification_status | pending_extraction / source_text_checked / human_verified |
-| derived_annual_billed_gal | Daily billed consumption × 365/366; an inferred value, not an observed annual total |
+| reporting_year | Reported year, not publication/upload year |
+| report_coverage_start / end / kind | Report's water-quality testing coverage; distinct from accounting coverage |
+| production_start / end / period_status | Explicit production dates if printed; 2023 gives a year only and keeps exact dates empty |
+| billing_coverage_start / end / status | Metered-usage/billed-volume coverage dates; all currently unconfirmed |
+| billing_denominator_days / status | Explicit analytical denominator; currently 365/366 with `assumed_calendar_days`, not confirmed report practice |
+| measurement_boundary_status | Whether matching customers, system and meter/account inclusion have been confirmed; currently unconfirmed |
+| pws_id_reported | Identifier printed on cover; early reports omit the NY prefix; this is not a boundary history |
+| produced_gal | Printed annual production, US gallons |
+| reported_daily_produced_gal | Printed daily production, gallons/day |
+| reported_daily_billed_gal / daily_billed_basis_status | Printed billed figure with daily-context qualification; 2023 is contextual |
+| reported_unaccounted_pct / percentage_decimal_places | Printed percent in 0–100 units and number of displayed decimals |
+| source_id + source_sha256 | Exact join to retrieval receipt; never join on source ID alone |
+| physical_pdf_page | Accounting paragraph page, 1-based physical PDF page |
+| verification_status | `ai_text_and_visual_checked` means AI checked extracted text and a rendered original page; independent human check remains pending |
+| notes | Interpretation qualifications and provenance |
 
-Empty numeric cells mean missing data and must not be replaced with zero. Join source hashes and retrieval times through `source_id` to `data/manifests/retrievals.csv`.
+Empty is missing, never zero. Printed quantities remain distinct from derived annual billing and inferred residual. Conditional rounding assumes nearest integer gallons and the displayed percentage unit; departmental rounding practices remain unknown.
